@@ -4,10 +4,10 @@ PLadmin_Settings = {
   JoinNotify = false; --Notify when a player joins
   AutoRespawn = true; --Automatically loadcharacter when dying
   AntiVoid = true; --Automatically teleport up when falling into void
-  AntiTase = false; --Prevents you from being tased (100% no getconnections used because its absolute garbage)
-  AntiArrest = false; --Prevents you from being arrested (100% no getconnections used because its absolute garbage)
-  AntiShoot = false; --Kills player who tries to shoot you (Will be delayed if you have shitty ping, *COUGH* PLDT Users)
-  AntiPunch = false; --Instantly kill players who try to punch you
+  AntiTase = true; --Prevents you from being tased (100% no getconnections used because its absolute garbage)
+  AntiArrest = true; --Prevents you from being arrested (100% no getconnections used because its absolute garbage)
+  AntiShoot = true; --Kills player who tries to shoot you (Will be delayed if you have shitty ping, *COUGH* PLDT Users)
+  AntiPunch = true; --Instantly kill players who try to punch you
   AntiFling = false; --Prevent exploiters from flinging you
   AntiShield = false; --stop pay2win people and bypass their shields
   AntiBring = false; --Prevent other exploiter(s) from bringing you
@@ -21,5 +21,5 @@ PLadmin_Settings = {
   RankedOutput = true; --Chat the output commands of ranked players
   WhisperToRanked = true; --Use whisper for outputing commands for ranked players
   Force_isMobile = false; --Force mobile action gui (Punch and crawl buttons) if executor is too shitty and detected as "emulator"
-};
+};wait()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/willfourtwenty/prisonlife/main/main.lua'))()
